@@ -57,3 +57,4 @@ Built with **HTML + TailwindCSS + minimal JS**, optimized for speed, SEO, and mo
 
 Free to use, edit, and deploy for client projects.  
 Attribution not required but appreciated.
+# new_era_renovations_website
