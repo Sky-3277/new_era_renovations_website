@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services | New Era Renovations</title>
+  <meta name="description" content="Residential, commercial, and design-build renovation services across Ontario. Free estimates. Licensed and insured." />
+
+  <link rel="icon" href="assets/images/logo.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Services | New Era Renovations" />
+  <meta property="og:description" content="Residential, commercial, and design-build renovation services across Ontario." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/hero/og-cover.jpg" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { DEFAULT: '#C7A151', dark: '#a8893f' },
+            base: '#0B0F1A',
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    .container { max-width: 1200px; }
+    .glass { backdrop-filter: saturate(180%) blur(8px); background: rgba(11,15,26,0.6); }
+  </style>
+</head>
+<body class="bg-base text-slate-100 antialiased">
+
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-50 border-b border-white/5 bg-base/80 glass">
+    <div class="mx-auto container px-4 md:px-6">
+      <div class="flex h-16 items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/images/logo.png" alt="New Era Renovations logo" class="h-12 w-12" />
+          <span class="text-lg font-semibold tracking-wide">New Era Renovations</span>
+        </a>
+        <nav aria-label="Primary" class="hidden md:flex items-center gap-8">
+          <a href="services.html" class="hover:text-brand text-brand">Services</a>
+          <a href="gallery.html" class="hover:text-brand">Gallery</a>
+          <a href="about.html" class="hover:text-brand">About</a>
+          <a href="contact.html" class="hover:text-brand">Contact</a>
+          <a href="contact.html" class="inline-flex items-center rounded-md bg-brand px-4 py-2 text-base font-medium text-black hover:bg-brand-dark focus:outline-none focus:ring-2 focus:ring-brand/30">Free Estimate</a>
+        </nav>
+        <button id="navToggle" class="md:hidden inline-flex items-center justify-center rounded-md p-2 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-brand/40" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-white/5 bg-base">
+      <div class="mx-auto container px-4 py-3 space-y-2">
+        <a href="services.html" class="block py-2 text-brand">Services</a>
+        <a href="gallery.html" class="block py-2">Gallery</a>
+        <a href="about.html" class="block py-2">About</a>
+        <a href="contact.html" class="block py-2">Contact</a>
+        <a href="contact.html" class="inline-flex w-full items-center justify-center rounded-md bg-brand px-4 py-2 text-base font-medium text-black hover:bg-brand-dark">Free Estimate</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="assets/images/hero/hero_2.png" alt="Services hero" class="h-full w-full object-cover opacity-70" />
+      <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/60 to-base"></div>
+    </div>
+    <div class="relative">
+      <div class="mx-auto container px-4 md:px-6 py-16 md:py-24">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">Our Services</h1>
+        <p class="mt-4 text-slate-300 max-w-2xl">Residential, commercial, and design-build solutions. From concept to completion with licensed, insured professionals.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <main class="py-14 md:py-20">
+    <div class="mx-auto container px-4 md:px-6">
+      <!-- Category tabs summary -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Residential -->
+        <section class="rounded-2xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition">
+          <div class="flex items-center gap-3">
+            <svg class="h-6 w-6 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l9-9 9 9"/><path d="M9 21V9h6v12"/></svg>
+            <h2 class="text-xl font-semibold">Residential Renovations</h2>
+          </div>
+          <p class="mt-3 text-sm text-slate-300">Modernize your home with durable finishes and clean craftsmanship.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-300 list-disc pl-5">
+            <li>Kitchens and bathrooms</li>
+            <li>Basement finishing</li>
+            <li>Flooring, tiling, painting</li>
+            <li>Drywall, carpentry, trim</li>
+            <li>Plumbing & electrical coordination</li>
+          </ul>
+          <a href="contact.html" class="mt-5 inline-flex items-center rounded-md bg-brand px-4 py-2 text-sm font-semibold text-black hover:bg-brand-dark">Get a Residential Quote</a>
+        </section>
+
+        <!-- Commercial -->
+        <section class="rounded-2xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition">
+          <div class="flex items-center gap-3">
+            <svg class="h-6 w-6 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            <h2 class="text-xl font-semibold">Commercial Renovations</h2>
+          </div>
+          <p class="mt-3 text-sm text-slate-300">Efficient fit-outs and refurbishments for retail, offices, and hospitality.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-300 list-disc pl-5">
+            <li>Retail and office build-outs</li>
+            <li>Restaurant and café upgrades</li>
+            <li>Phased renovations to reduce downtime</li>
+            <li>Project management and schedules</li>
+            <li>Permits, inspections, compliance</li>
+          </ul>
+          <a href="contact.html" class="mt-5 inline-flex items-center rounded-md bg-brand px-4 py-2 text-sm font-semibold text-black hover:bg-brand-dark">Get a Commercial Quote</a>
+        </section>
+
+        <!-- Design & Build -->
+        <section class="rounded-2xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition">
+          <div class="flex items-center gap-3">
+            <svg class="h-6 w-6 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20l9-5-9-5-9 5 9 5z"/><path d="M12 12V4"/></svg>
+            <h2 class="text-xl font-semibold">Design & Build</h2>
+          </div>
+          <p class="mt-3 text-sm text-slate-300">Single team from drawings to delivery. Transparent budgets and timelines.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-300 list-disc pl-5">
+            <li>Concept design and 3D planning</li>
+            <li>Interior design and material selection</li>
+            <li>Extensions, additions, custom work</li>
+            <li>Cost control and procurement</li>
+            <li>Warranty and aftercare</li>
+          </ul>
+          <a href="contact.html" class="mt-5 inline-flex items-center rounded-md bg-brand px-4 py-2 text-sm font-semibold text-black hover:bg-brand-dark">Start Design-Build</a>
+        </section>
+      </div>
+
+      <!-- Add-on services -->
+      <div class="mt-12 rounded-2xl border border-white/10 bg-white/5 p-6 md:p-8">
+        <h3 class="text-lg md:text-xl font-semibold">Specialty Services</h3>
+        <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-slate-300">
+          <div class="rounded-lg bg-white/5 p-4">Painting services</div>
+          <div class="rounded-lg bg-white/5 p-4">Floor remodelling</div>
+          <div class="rounded-lg bg-white/5 p-4">Architect services</div>
+          <div class="rounded-lg bg-white/5 p-4">Electrical services</div>
+          <div class="rounded-lg bg-white/5 p-4">Plumbing services</div>
+          <div class="rounded-lg bg-white/5 p-4">Custom millwork</div>
+          <div class="rounded-lg bg-white/5 p-4">Exterior facelifts</div>
+          <div class="rounded-lg bg-white/5 p-4">And much more</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- CTA Band -->
+  <section class="py-12">
+    <div class="mx-auto container px-4 md:px-6">
+      <div class="rounded-2xl bg-gradient-to-r from-brand to-brand-dark p-8 text-black">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+          <div>
+            <h3 class="text-xl md:text-2xl font-semibold">Ready to get your quote?</h3>
+            <p class="text-sm md:text-base">Free, no-obligation estimate. Province-wide service.</p>
+          </div>
+          <div class="flex gap-3">
+            <a href="contact.html" class="inline-flex items-center justify-center rounded-md bg-black px-5 py-3 font-semibold text-white hover:opacity-90">Request Estimate</a>
+            <a href="tel:+14374436608" class="inline-flex items-center justify-center rounded-md border border-black px-5 py-3 font-semibold">Call (437) 443-6608</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 py-10">
+    <div class="mx-auto container px-4 md:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <img src="assets/images/logo.png" alt="logo" class="h-8 w-8" />
+            <span class="font-semibold">New Era Renovations</span>
+          </div>
+          <p class="text-sm text-slate-300">Serving all of Ontario. Residential, commercial, and design-build renovations.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-3">Company</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about.html" class="hover:text-brand">About</a></li>
+            <li><a href="services.html" class="hover:text-brand text-brand">Services</a></li>
+            <li><a href="gallery.html" class="hover:text-brand">Gallery</a></li>
+            <li><a href="contact.html" class="hover:text-brand">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-3">Contact</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="tel:+14374436608" class="hover:text-brand">(437) 443-6608</a></li>
+            <li><a href="mailto:newerarenovations@outlook.com" class="hover:text-brand">newerarenovations@outlook.com</a></li>
+            <li>Ontario, Canada</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-3">Resources</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="assets/brochure.pdf" class="hover:text-brand">Download brochure</a></li>
+            <li><a href="sitemap.xml" class="hover:text-brand">Sitemap</a></li>
+            <li><a href="robots.txt" class="hover:text-brand">Robots.txt</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <p>© <span id="y"></span> New Era Renovations. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="#" class="hover:text-brand">Terms</a>
+          <a href="#" class="hover:text-brand">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const t = document.getElementById('navToggle');
+    const m = document.getElementById('mobileMenu');
+    if (t && m) {
+      t.addEventListener('click', () => {
+        const expanded = t.getAttribute('aria-expanded') === 'true';
+        t.setAttribute('aria-expanded', String(!expanded));
+        m.classList.toggle('hidden');
+      });
+    }
+    const y = document.getElementById('y');
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

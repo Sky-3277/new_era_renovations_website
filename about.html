@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us | New Era Renovations</title>
+  <meta name="description" content="Learn more about New Era Renovations, our values, and why homeowners and businesses across Ontario trust us." />
+
+  <link rel="icon" href="assets/images/logo.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About Us | New Era Renovations" />
+  <meta property="og:description" content="Learn more about New Era Renovations and our trusted services across Ontario." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/hero/og-cover.jpg" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { DEFAULT: '#C7A151', dark: '#a8893f' },
+            base: '#0B0F1A',
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    .container { max-width: 1200px; }
+    .glass { backdrop-filter: saturate(180%) blur(8px); background: rgba(11,15,26,0.6); }
+  </style>
+</head>
+<body class="bg-base text-slate-100 antialiased">
+
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-50 border-b border-white/5 bg-base/80 glass">
+    <div class="mx-auto container px-4 md:px-6">
+      <div class="flex h-16 items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/images/logo.png" alt="New Era Renovations logo" class="h-12 w-12" />
+          <span class="text-lg font-semibold tracking-wide">New Era Renovations</span>
+        </a>
+        <nav aria-label="Primary" class="hidden md:flex items-center gap-8">
+          <a href="services.html" class="hover:text-brand">Services</a>
+          <a href="gallery.html" class="hover:text-brand">Gallery</a>
+          <a href="about.html" class="hover:text-brand text-brand">About</a>
+          <a href="contact.html" class="hover:text-brand">Contact</a>
+          <a href="contact.html" class="inline-flex items-center rounded-md bg-brand px-4 py-2 text-base font-medium text-black hover:bg-brand-dark">Free Estimate</a>
+        </nav>
+        <button id="navToggle" class="md:hidden inline-flex items-center justify-center rounded-md p-2 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-brand/40" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-white/5 bg-base">
+      <div class="mx-auto container px-4 py-3 space-y-2">
+        <a href="services.html" class="block py-2">Services</a>
+        <a href="gallery.html" class="block py-2">Gallery</a>
+        <a href="about.html" class="block py-2 text-brand">About</a>
+        <a href="contact.html" class="block py-2">Contact</a>
+        <a href="contact.html" class="inline-flex w-full items-center justify-center rounded-md bg-brand px-4 py-2 text-base font-medium text-black hover:bg-brand-dark">Free Estimate</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="assets/images/hero/hero_about1.png" alt="About us hero" class="h-full w-full object-cover opacity-70" />
+      <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/60 to-base"></div>
+    </div>
+    <div class="relative">
+      <div class="mx-auto container px-4 md:px-6 py-16 md:py-24">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">About Us</h1>
+        <p class="mt-4 text-slate-300 max-w-2xl">Our story, our values, and why Ontario homeowners and businesses trust us for renovation excellence.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <main class="py-14 md:py-20">
+    <div class="mx-auto container px-4 md:px-6 max-w-4xl space-y-8">
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">Who We Are</h2>
+        <p class="text-slate-300 leading-relaxed">New Era Renovations is a full-service renovation and construction company serving all of Ontario. With years of combined experience, our licensed and insured team specializes in transforming residential and commercial spaces with precision and care. We provide everything from small upgrades to complete design-build projects.</p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">Our Values</h2>
+        <ul class="space-y-3 text-slate-300 list-disc pl-5">
+          <li><strong>Quality Craftsmanship:</strong> We deliver lasting renovations with attention to detail.</li>
+          <li><strong>Transparency:</strong> Clear communication and honest pricing at every step.</li>
+          <li><strong>Customer-Centric:</strong> Your satisfaction guides our process from design to delivery.</li>
+          <li><strong>Innovation:</strong> Combining modern design with practical solutions.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">Why Choose Us</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="rounded-xl bg-white/5 p-6">
+            <p class="font-semibold text-brand mb-2">Licensed & Insured</p>
+            <p class="text-slate-300 text-sm">All work performed by certified professionals backed with insurance coverage.</p>
+          </div>
+          <div class="rounded-xl bg-white/5 p-6">
+            <p class="font-semibold text-brand mb-2">All of Ontario</p>
+            <p class="text-slate-300 text-sm">From Toronto to Ottawa, we proudly serve homeowners and businesses across the province.</p>
+          </div>
+          <div class="rounded-xl bg-white/5 p-6">
+            <p class="font-semibold text-brand mb-2">End-to-End Service</p>
+            <p class="text-slate-300 text-sm">From design consultation to final inspection, we handle it all.</p>
+          </div>
+          <div class="rounded-xl bg-white/5 p-6">
+            <p class="font-semibold text-brand mb-2">Warranty</p>
+            <p class="text-slate-300 text-sm">Every project is backed by a workmanship warranty for peace of mind.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- CTA Band -->
+  <section class="py-12">
+    <div class="mx-auto container px-4 md:px-6">
+      <div class="rounded-2xl bg-gradient-to-r from-brand to-brand-dark p-8 text-black">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+          <div>
+            <h3 class="text-xl md:text-2xl font-semibold">Let’s Build Something Great</h3>
+            <p class="text-sm md:text-base">Talk to our team and discover how we can bring your vision to life.</p>
+          </div>
+          <div class="flex gap-3">
+            <a href="contact.html" class="inline-flex items-center justify-center rounded-md bg-black px-5 py-3 font-semibold text-white hover:opacity-90">Request Estimate</a>
+            <a href="tel:+14374436608" class="inline-flex items-center justify-center rounded-md border border-black px-5 py-3 font-semibold">Call Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 py-10">
+    <div class="mx-auto container px-4 md:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <img src="assets/images/logo.png" alt="logo" class="h-8 w-8" />
+            <span class="font-semibold">New Era Renovations</span>
+          </div>
+          <p class="text-sm text-slate-300">Serving all of Ontario. Residential, commercial, and design-build renovations.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-3">Company</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about.html" class="hover:text-brand text-brand">About</a></li>
+            <li><a href="services.html" class="hover:text-brand">Services</a></li>
+            <li><a href="gallery.html" class="hover:text-brand">Gallery</a></li>
+            <li><a href="contact.html" class="hover:text-brand">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-3">Contact</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="tel:+14374436608" class="hover:text-brand">(437) 443-6608</a></li>
+            <li><a href="mailto:newerarenovations@outlook.com" class="hover:text-brand">newerarenovations@outlook.com</a></li>
+            <li>Ontario, Canada</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-3">Resources</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="assets/brochure.pdf" class="hover:text-brand">Download brochure</a></li>
+            <li><a href="sitemap.xml" class="hover:text-brand">Sitemap</a></li>
+            <li><a href="robots.txt" class="hover:text-brand">Robots.txt</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <p>© <span id="y"></span> New Era Renovations. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="#" class="hover:text-brand">Terms</a>
+          <a href="#" class="hover:text-brand">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const t = document.getElementById('navToggle');
+    const m = document.getElementById('mobileMenu');
+    if (t && m) {
+      t.addEventListener('click', () => {
+        const expanded = t.getAttribute('aria-expanded') === 'true';
+        t.setAttribute('aria-expanded', String(!expanded));
+        m.classList.toggle('hidden');
+      });
+    }
+    const y = document.getElementById('y');
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

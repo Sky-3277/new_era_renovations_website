@@ -1,0 +1,42 @@
+/* assets/css/style.css */
+
+/* Typography tweaks */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.01em;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Buttons */
+.btn {
+  @apply inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-200;
+}
+.btn-primary {
+  @apply bg-brand text-black hover:bg-brand-dark px-6 py-3;
+}
+.btn-outline {
+  @apply border border-white/10 text-slate-100 hover:bg-white/10 px-6 py-3;
+}
+
+/* Forms */
+input, textarea {
+  @apply w-full rounded-md bg-white/10 p-3 text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand/40;
+}
+
+/* Cards / sections */
+.card {
+  @apply rounded-2xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition;
+}
+
+/* Gallery images */
+.gallery-img {
+  @apply rounded-lg shadow-md hover:scale-[1.02] transition-transform duration-200;
+}
+
+/* Footer links */
+footer a {
+  @apply hover:text-brand transition-colors;
+}
