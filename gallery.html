@@ -99,7 +99,37 @@
           </div>
         </div>
 
-        <!-- Example project 2 -->
+         <!-- Example project 2 -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Office Build</h3>
+          <div class="grid grid-cols-2 gap-2">
+            <div>
+              <img src="assets/images/before-after/commercial_before.jpeg" alt="Kitchen before" class="rounded-lg" />
+              <p class="text-xs text-center mt-1 text-slate-400">Before</p>
+            </div>
+            <div>
+              <img src="assets/images/before-after/commercial_after.jpeg" alt="Kitchen after" class="rounded-lg" />
+              <p class="text-xs text-center mt-1 text-slate-400">After</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Example project 3 -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Bar Remodel</h3>
+          <div class="grid grid-cols-2 gap-2">
+            <div>
+              <img src="assets/images/before-after/bar_before.jpeg" alt="Kitchen before" class="rounded-lg" />
+              <p class="text-xs text-center mt-1 text-slate-400">Before</p>
+            </div>
+            <div>
+              <img src="assets/images/before-after/bar_after.jpeg" alt="Kitchen after" class="rounded-lg" />
+              <p class="text-xs text-center mt-1 text-slate-400">After</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Example project 4 -->
         <div>
           <h3 class="text-lg font-semibold mb-3">Fire Place</h3>
           <div class="grid grid-cols-2 gap-2">
@@ -114,8 +144,40 @@
           </div>
         </div>
       </div>
+      <!-- Project Carousel Section -->
+<section class="mt-20">
+  <h2 class="text-2xl font-semibold mb-6">Project Showcase</h2>
+
+<div class="relative overflow-hidden rounded-xl w-full max-w-4xl mx-auto" id="projectCarousel">
+  <div class="flex transition-transform duration-700 ease-in-out w-full" id="carouselTrack" style="width:100%">
+
+      <!-- Slide 1 -->
+      <img src="assets/images/projects/office1.jpeg" alt="Project 1" class="w-full min-w-full h-64 md:h-96 object-cover flex-shrink-0" />
+      <!-- Slide 2 -->
+      <img src="assets/images/projects/office2.jpeg" alt="Project 1" class="w-full min-w-full h-64 md:h-96 object-cover flex-shrink-0" />
+      <!-- Slide 3 -->
+      <img src="assets/images/projects/office3.jpeg" alt="Project 1" class="w-full min-w-full h-64 md:h-96 object-cover flex-shrink-0" />
+      <!-- Slide 4 -->
+      <img src="assets/images/projects/office4.jpeg" alt="Project 1" class="w-full min-w-full h-64 md:h-96 object-cover flex-shrink-0" />
+      <!-- Slide 5 -->
+      <img src="assets/images/projects/office5.jpeg" alt="Project 1" class="w-full min-w-full h-64 md:h-96 object-cover flex-shrink-0" />
+      <!-- Slide 6 -->
+      <img src="assets/images/projects/office6.jpeg" alt="Project 1" class="w-full min-w-full h-64 md:h-96 object-cover flex-shrink-0" />
+    </div>
+    <!-- Controls -->
+    <button id="prevBtn" class="absolute top-1/2 left-3 -translate-y-1/2 bg-black/50 text-white rounded-full p-2">
+      ‹
+    </button>
+    <button id="nextBtn" class="absolute top-1/2 right-3 -translate-y-1/2 bg-black/50 text-white rounded-full p-2">
+      ›
+    </button>
+  </div>
+</section>
+
     </div>
   </main>
+
+
 
   <!-- CTA Band -->
   <section class="py-12">
@@ -195,5 +257,8 @@
     const y = document.getElementById('y');
     if (y) y.textContent = new Date().getFullYear();
   </script>
+
+  <!-- External scripts -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

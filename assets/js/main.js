@@ -18,6 +18,33 @@ if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
 
+// --- Project Carousel ---
+const track = document.getElementById("carouselTrack");
+const slides = track ? track.children : [];
+let index = 0;
+
+function updateCarousel() {
+  if (track) {
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+}
+
+// Next/Prev buttons
+document.getElementById("nextBtn")?.addEventListener("click", () => {
+  index = (index + 1) % slides.length;
+  updateCarousel();
+});
+document.getElementById("prevBtn")?.addEventListener("click", () => {
+  index = (index - 1 + slides.length) % slides.length;
+  updateCarousel();
+});
+
+// Auto-play every 5s
+setInterval(() => {
+  index = (index + 1) % slides.length;
+  updateCarousel();
+}, 5000);
+
 // --- Before/After Slider (optional) ---
 // For images wrapped in .before-after with two <img>, adds a draggable slider
 document.querySelectorAll(".before-after").forEach((wrapper) => {
@@ -69,3 +96,4 @@ document.querySelectorAll(".before-after").forEach((wrapper) => {
     });
   }
 });
+
